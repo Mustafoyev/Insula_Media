@@ -168,21 +168,39 @@ img {
 }
 
 // about-styles
+.about {
+  position: relative;
+  padding: 80px 0;
+  background-color: #161a2b;
+  background-image: url("../images/Power__plant1.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right bottom;
+}
+
+.about::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 8px;
+  background-color: #ee1b24;
+  content: "";
+}
+
+.about::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 8px;
+  background-color: #ffffff;
+  content: "";
+}
+
 .about__inner {
   display: flex;
   align-items: center;
-}
-
-.about__left {
-  width: 50%;
-  padding: 80px 168px 128px 120px;
-  background-color: #161a2b;
-  border-bottom: 8px solid #ee1b24;
-}
-
-.about__left-container {
-  width: 580px;
-  margin: 0 auto;
 }
 
 .about__title {
@@ -220,26 +238,12 @@ img {
   color: #ffffff;
 }
 
-.about__right {
-  width: 50%;
-  padding: 66px 120px 70px 168px;
-  background-image: url("../images/Power__plant1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom: 8px solid #ffffff;
-}
-
-.about__right-container {
-  width: 580px;
-  margin: 0 auto;
-}
-
 .about__list-right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: -50px;
+  margin-left: 274px;
   text-decoration: none;
 }
 
