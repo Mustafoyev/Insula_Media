@@ -44,6 +44,10 @@ img {
   justify-content: space-between;
 }
 
+.logo {
+  display: inline-block;
+}
+
 .navbar__list {
   display: flex;
   align-items: center;
@@ -1064,4 +1068,17 @@ img {
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 928px) {
+  .container {
+    padding: 0 40px;
+  }
+  .site-header {
+    padding: 20px 0;
+  }
+  .logo-img {
+    width: 146px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=main.css.map */
